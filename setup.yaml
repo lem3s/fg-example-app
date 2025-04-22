@@ -1,0 +1,7 @@
+version: "1.0"
+
+applications:
+  kafka:
+    jdk_version: 21
+    source: "./kafka_2.13-4.0.0.tgz"
+    command: 'KAFKA_CLUSTER_ID="$(bin/kafka-storage.sh random-uuid)" && echo "Generated Cluster ID: $KAFKA_CLUSTER_ID" && bin/kafka-storage.sh format --standalone -t "$KAFKA_CLUSTER_ID" -c config/server.properties && bin/kafka-server-start.sh config/server.properties'
