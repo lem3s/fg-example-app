@@ -4,8 +4,8 @@ versions:
     jdk:
       name: "21"
       platforms:
-        win: "https://tgz.com/jdk_21-2.3_windows.tgz"
-        mac: "https://tgz.com/jdk_21-2.3_macos.tgz"
+        windows: "https://tgz.com/jdk_21-2.3_windows.tgz"
+        dawin: "https://tgz.com/jdk_21-2.3_macos.tgz"
         linux: "https://tgz.com/jdk_21-2.3_linux.tgz"
     apps:
       - name: "validator"
