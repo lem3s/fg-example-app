@@ -1,7 +1,19 @@
-version: "1.0"
-
-applications:
-  kafka:
-    jdk_version: 21
-    source: "https://dlcdn.apache.org/kafka/4.0.0/kafka_2.13-4.0.0.tgz"
-    command: 'KAFKA_CLUSTER_ID="$(bin/kafka-storage.sh random-uuid)" && echo "Generated Cluster ID: $KAFKA_CLUSTER_ID" && bin/kafka-storage.sh format --standalone -t "$KAFKA_CLUSTER_ID" -c config/server.properties && bin/kafka-server-start.sh config/server.properties'
+versions:
+  - version: "1.2.3"
+    date: "2025-03-23"
+    jdk:
+      name: "21"
+      platforms:
+        win: "https://tgz.com/jdk_21-2.3_windows.tgz"
+        mac: "https://tgz.com/jdk_21-2.3_macos.tgz"
+        linux: "https://tgz.com/jdk_21-2.3_linux.tgz"
+    apps:
+      - name: "validator"
+        description: "Configuration validation application"
+        version: "2.3.4"
+        dependencies:
+          - "https://github.com/deposito/dependencias/config-0.1.2.jar"
+        files:
+          - "https://servidor.com/teste.txt"
+          - "https://x.com/bd/2025/aten-84.bin"
+        command: "java -jar config-0.1.2.jar -f teste.txt -bin aten-84.bin"
