@@ -9,11 +9,8 @@ versions:
         linux: "https://download.java.net/java/GA/jdk24.0.1/24a58e0e276943138bf3e963e6291ac2/9/GPL/openjdk-24.0.1_linux-x64_bin.tar.gz"
     apps:
       - name: "validator"
-        description: "Configuration validation application"
-        version: "2.3.4"
+        description: "Hello world application"
+        version: "1.0"
         dependencies:
-          - "https://github.com/deposito/dependencias/config-0.1.2.jar"
-        files:
-          - "https://servidor.com/teste.txt"
-          - "https://x.com/bd/2025/aten-84.bin"
-        command: "java -jar config-0.1.2.jar -f teste.txt -bin aten-84.bin"
+          - "https://github.com/lem3s/fg-example-app/blob/main/HelloWorld/out/artifacts/HelloWorld_jar/HelloWorld.jar"
+        command: "java -jar HelloWorld.jar"
