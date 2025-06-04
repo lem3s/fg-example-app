@@ -13,4 +13,6 @@ versions:
         version: "1.0"
         dependencies:
           - "https://github.com/lem3s/fg-example-app/blob/main/HelloWorld/out/artifacts/HelloWorld_jar/HelloWorld.jar"
+        files:
+          - "https://causaoperaria.org.br/wp-content/uploads/2022/09/32AF2063-72AC-4706-9750-47356C3736C7-942x720.jpeg"
         command: "java -jar HelloWorld.jar"
