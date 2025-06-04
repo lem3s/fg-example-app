@@ -8,7 +8,7 @@ versions:
         darwin: "https://download.java.net/java/GA/jdk24.0.1/24a58e0e276943138bf3e963e6291ac2/9/GPL/openjdk-24.0.1_macos-aarch64_bin.tar.gz"
         linux: "https://download.java.net/java/GA/jdk24.0.1/24a58e0e276943138bf3e963e6291ac2/9/GPL/openjdk-24.0.1_linux-x64_bin.tar.gz"
     apps:
-      - name: "validator"
+      - name: "hello-world"
         description: "Hello world application"
         version: "1.0"
         dependencies:
